@@ -1,0 +1,7 @@
+Leetcode Categories
+
+HashMap:
+1. Two Sum
+
+Binary Search:
+1. Two Sum
