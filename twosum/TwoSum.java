@@ -67,7 +67,7 @@ public class TwoSum{
 					break;
 				}
 			}
-
+			
 
 			//if(selectNum != foundNum){
 			//	for(int j = 0; j < nums.length; j++){
@@ -91,6 +91,21 @@ public class TwoSum{
 
 		
 
+		return null;
+	}
+
+	public int[] twoSum3(int[] nums, int target){
+		if(nums.length >= 2){
+			for(int i = 0; i < nums.length; i++){
+				for(int j = nums.length - 1; j > i; j--){
+					int sum = nums[i] + nums[j];
+					if(sum == target){
+						int res[] = {i, j};
+						return res;
+					}
+				}
+			}
+		}
 		return null;
 	}
 

@@ -9,7 +9,9 @@ class template{
 	static int target = 9;
 
 	public static void main(String[] args){
-		int[] arr = twoSum.twoSum2(nums, target);
-		System.out.println(Arrays.toString(arr));
+		//int[] arr1 = twoSum.twoSum1(nums, target);
+		//int[] arr2 = twoSum.twoSum2(nums, target);
+		int[] arr3 = twoSum.twoSum3(nums, target);
+		System.out.println(Arrays.toString(arr3));
 	}
 }
