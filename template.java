@@ -3,6 +3,10 @@ import java.util.*;
 // Datatypes
 import Datatypes.*;
 
+// Interview Question
+import InterviewQuestionOfJava.ReverseString.*;
+import InterviewQuestionOfJava.Fibonacci.*;
+
 // Questions java file
 import twosum.*;
 import AddTwoNumbers.*;
@@ -36,9 +40,30 @@ class template{
         ans.printAll();
     }
 
+    // Reverse String
+    public static void ReverseString(){
+        String s = "How are you";
+        ReverseString rs = new ReverseString();
+        rs.reverseString2(s);
+    }
+
+    // Fibonacci 
+    public static void Fibonacci(){
+        int num = 9;
+        Fibonacci fb = new Fibonacci();
+        fb.fibonacciSeries(num);
+    }
+
 	public static void main(String[] args){
+        /* leetcode */
         //CompileTwoSum();
-        
-        CompileAddTwoNumbers();
+        //CompileAddTwoNumbers();
+        /* leetcode */
+
+
+        /* Interview Question */
+        //ReverseString();
+        Fibonacci();
+        /* Interview Question */
 	}
 }
