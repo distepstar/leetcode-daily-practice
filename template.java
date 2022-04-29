@@ -10,6 +10,8 @@ import InterviewQuestionOfJava.Fibonacci.*;
 // Questions java file
 import twosum.*;
 import AddTwoNumbers.*;
+import LongestSubstring.*;
+import MedianTwoSortedArray.*;
 
 class template{
 
@@ -40,6 +42,24 @@ class template{
         ans.printAll();
     }
 
+    // LongestSubstring
+    public static void LongestSubstring(){
+        LongestSubstring ls = new LongestSubstring();
+        String s = "abcabcbb";
+        ls.lengthOfLongestSubstring(s);
+    }
+
+    // MedianTwoSortedArray
+    public static void MedianTwoSortedArray(){
+        MedianTwoSortedArray mtsa = new MedianTwoSortedArray();
+        // 1, 2, 3, 4, 5, 6
+        int nums1[] = {1, 3, 5};
+        int nums2[] = {2, 4, 6};
+        double d = mtsa.findMedianSortedArrays3(nums1, nums2);
+        System.out.println(d);
+        
+    }
+
     // Reverse String
     public static void ReverseString(){
         String s = "How are you";
@@ -58,12 +78,15 @@ class template{
         /* leetcode */
         //CompileTwoSum();
         //CompileAddTwoNumbers();
+        //LongestSubstring();
+        MedianTwoSortedArray();
+
         /* leetcode */
 
 
         /* Interview Question */
         //ReverseString();
-        Fibonacci();
+        //Fibonacci();
         /* Interview Question */
 	}
 }

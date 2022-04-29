@@ -1,10 +1,15 @@
 Leetcode Categories
 
 HashMap:
-1. Two Sum
+1. Two Sum (#1)
 
 Binary Search:
-1. Two Sum
+1. Two Sum (#1)
+
+Sliding Window:
+1. Longest Substring without repeating character (#3)
+
 
 ListNode (LinkedList):
-1. Add Two Numbers
+1. Add Two Numbers (#2)
+
