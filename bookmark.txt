@@ -9,6 +9,11 @@ Binary Search:
 Sliding Window:
 1. Longest Substring without repeating character (#3)
 
+Mid-point:
+1. Median of Two Sorted Array (#4)
+
+Two array approach:
+1. Median of Two Sorted Array (#4)
 
 ListNode (LinkedList):
 1. Add Two Numbers (#2)

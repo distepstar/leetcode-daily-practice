@@ -12,6 +12,7 @@ import twosum.*;
 import AddTwoNumbers.*;
 import LongestSubstring.*;
 import MedianTwoSortedArray.*;
+import LongestPalindromicSubstring.*;
 
 class template{
 
@@ -59,6 +60,14 @@ class template{
         System.out.println(d);
         
     }
+    // LongestPalindromicSubstring
+    public static void LongestPalindromicSubstring(){
+        String s = "aaaabbaa";
+        LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+
+        String ans = lps.longestPalindrome2(s);
+        System.out.println(ans);
+    }
 
     // Reverse String
     public static void ReverseString(){
@@ -79,7 +88,8 @@ class template{
         //CompileTwoSum();
         //CompileAddTwoNumbers();
         //LongestSubstring();
-        MedianTwoSortedArray();
+        //MedianTwoSortedArray();
+        LongestPalindromicSubstring();
 
         /* leetcode */
 
