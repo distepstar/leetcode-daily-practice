@@ -6,6 +6,8 @@ import java.util.*;
 public class LongestPalindromicSubstring{
 
     Boolean memo[][];
+    boolean memo2[][];
+
 	public LongestPalindromicSubstring() {
 	}
 
@@ -110,5 +112,33 @@ public class LongestPalindromicSubstring{
 
         memo[left][right] = isPalin(s, left + 1, right - 1);
         return memo[left][right];
+    }
+
+    // Bottom-up dp solution (boolean: allow null, Boolean: Null Pointer Exception)
+    public String longestPalindrome4(String s) {
+        int len = s.length();
+        
+        int maxLen = 0;
+        String res = "";
+        memo2 = new boolean[len][len];
+        
+        for(int l = len - 1; l >= 0; l--){
+            for(int r = l; r < len; r++){
+                if(s.charAt(l) == s.charAt(r)){
+                    if(r - l <= 2){
+                        memo2[l][r] = true;
+                    }else{
+                        memo2[l][r] = memo2[l + 1][r - 1];
+                    }
+                }  
+
+                if(memo2[l][r] && maxLen < r - l + 1){
+                    maxLen = r - l + 1;
+                    res = s.substring(l, r + 1);
+                }
+            }
+        }
+
+        return res;
     }
 }

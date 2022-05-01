@@ -13,6 +13,7 @@ import AddTwoNumbers.*;
 import LongestSubstring.*;
 import MedianTwoSortedArray.*;
 import LongestPalindromicSubstring.*;
+import ZigZag.*;
 
 class template{
 
@@ -65,8 +66,15 @@ class template{
         String s = "aaaabbaa";
         LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
 
-        String ans = lps.longestPalindrome2(s);
+        String ans = lps.longestPalindrome4(s);
         System.out.println(ans);
+    }
+
+    public static void ZigZag(){
+        String s = "PAYPALISHIRING";
+        ZigZagConversation zzc = new ZigZagConversation();
+
+        System.out.println(zzc.convert2(s, 3));
     }
 
     // Reverse String
@@ -80,7 +88,7 @@ class template{
     public static void Fibonacci(){
         int num = 9;
         Fibonacci fb = new Fibonacci();
-        fb.fibonacciSeries(num);
+        fb.fibonacciSeries3(num);
     }
 
 	public static void main(String[] args){
@@ -89,8 +97,8 @@ class template{
         //CompileAddTwoNumbers();
         //LongestSubstring();
         //MedianTwoSortedArray();
-        LongestPalindromicSubstring();
-
+        //LongestPalindromicSubstring();
+        ZigZag();
         /* leetcode */
 
 
