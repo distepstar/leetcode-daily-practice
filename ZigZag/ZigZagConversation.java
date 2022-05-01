@@ -47,11 +47,11 @@ public class ZigZagConversation{
             while(pos < s.length()){
                 sb.append(s.charAt(pos));
                 if(i == 1){
-                    pos += 2 * (numRows - 1);
+                    pos += 2 * (numRows - i);
                 }else if(i == numRows){
                     pos += 2 * (i - 1);
                 }else{
-                    pos += up ? 2 * (numRows - 1) : 2 * (i - 1);
+                    pos += up ? 2 * (numRows - i) : 2 * (i - 1);
                     up = !up;
                 }
             }

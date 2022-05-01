@@ -18,3 +18,9 @@ Two array approach:
 ListNode (LinkedList):
 1. Add Two Numbers (#2)
 
+Upward-Downward
+1. ZigZag
+
+Maths:
+1. ReverseInteger
+2. PalindromeNumber

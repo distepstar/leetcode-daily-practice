@@ -14,6 +14,8 @@ import LongestSubstring.*;
 import MedianTwoSortedArray.*;
 import LongestPalindromicSubstring.*;
 import ZigZag.*;
+import PalindromeNumber.*;
+import ReverseInteger.*;
 
 class template{
 
@@ -77,6 +79,21 @@ class template{
         System.out.println(zzc.convert2(s, 3));
     }
 
+	public static void PalindromeNumber(){
+		int n = 121;
+		PalindromeNumber pn = new PalindromeNumber();
+		boolean isPalin = pn.isPalindrome2(n);
+		System.out.println(isPalin);
+
+	}
+
+	// Reverse Integer
+	public static void ReverseInteger(){
+		int x = 1234;
+		ReverseInteger ri = new ReverseInteger();
+		System.out.println(ri.reverse2(x));
+	}
+
     // Reverse String
     public static void ReverseString(){
         String s = "How are you";
@@ -98,7 +115,9 @@ class template{
         //LongestSubstring();
         //MedianTwoSortedArray();
         //LongestPalindromicSubstring();
-        ZigZag();
+        //ZigZag();
+		//PalindromeNumber();
+		ReverseInteger();
         /* leetcode */
 
 
