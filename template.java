@@ -16,6 +16,7 @@ import LongestPalindromicSubstring.*;
 import ZigZag.*;
 import PalindromeNumber.*;
 import ReverseInteger.*;
+import BackspaceStringCompare.*;
 
 class template{
 
@@ -94,6 +95,14 @@ class template{
 		System.out.println(ri.reverse2(x));
 	}
 
+	public static void BackspaceStringCompare(){
+		String s = "abcd#ef";
+		String t = "abcef";
+		Backspace bsc = new Backspace();
+		System.out.println(bsc.backspaceCompare2(s, t));
+
+	}
+
     // Reverse String
     public static void ReverseString(){
         String s = "How are you";
@@ -117,7 +126,9 @@ class template{
         //LongestPalindromicSubstring();
         //ZigZag();
 		//PalindromeNumber();
-		ReverseInteger();
+		//ReverseInteger();
+		BackspaceStringCompare();
+
         /* leetcode */
 
 
